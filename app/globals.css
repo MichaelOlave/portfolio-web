@@ -165,8 +165,8 @@
   .aura-gradient {
     background: radial-gradient(
       ellipse at center,
-      rgba(59, 130, 246, 0.15) 0%,
-      rgba(168, 85, 247, 0.08) 40%,
+      rgba(59, 130, 246, 0.2) 0%,
+      rgba(168, 85, 247, 0.12) 40%,
       rgba(15, 23, 42, 0.4) 100%
     );
   }
@@ -174,8 +174,8 @@
   .aura-blue {
     background: radial-gradient(
       ellipse 800px 300px at 50% 20%,
-      rgba(59, 130, 246, 0.25) 0%,
-      rgba(59, 130, 246, 0.1) 30%,
+      rgba(59, 130, 246, 0.35) 0%,
+      rgba(59, 130, 246, 0.15) 30%,
       transparent 70%
     );
   }
@@ -183,8 +183,8 @@
   .aura-purple {
     background: radial-gradient(
       ellipse 600px 250px at 80% 50%,
-      rgba(168, 85, 247, 0.2) 0%,
-      rgba(168, 85, 247, 0.05) 40%,
+      rgba(168, 85, 247, 0.3) 0%,
+      rgba(168, 85, 247, 0.1) 40%,
       transparent 70%
     );
   }
@@ -192,8 +192,8 @@
   .aura-green {
     background: radial-gradient(
       ellipse 700px 280px at 20% 80%,
-      rgba(74, 222, 128, 0.15) 0%,
-      rgba(74, 222, 128, 0.05) 35%,
+      rgba(74, 222, 128, 0.25) 0%,
+      rgba(74, 222, 128, 0.08) 35%,
       transparent 65%
     );
   }
@@ -201,22 +201,22 @@
   .glow-circle {
     position: absolute;
     border-radius: 50%;
-    filter: blur(60px);
-    opacity: 0.4;
+    filter: blur(80px);
+    opacity: 0.6;
   }
 
   .glow-blue {
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.5) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.8) 0%, rgba(59, 130, 246, 0.3) 40%, transparent 70%);
     animation: float 8s ease-in-out infinite;
   }
 
   .glow-purple {
-    background: radial-gradient(circle, rgba(168, 85, 247, 0.4) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.7) 0%, rgba(168, 85, 247, 0.2) 40%, transparent 70%);
     animation: float 10s ease-in-out infinite reverse;
   }
 
   .glow-green {
-    background: radial-gradient(circle, rgba(74, 222, 128, 0.3) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(74, 222, 128, 0.6) 0%, rgba(74, 222, 128, 0.15) 40%, transparent 70%);
     animation: float 12s ease-in-out infinite;
   }
 

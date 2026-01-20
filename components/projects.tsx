@@ -104,8 +104,8 @@ export function Projects() {
     <section id="projects" className="relative min-h-screen bg-background py-20 overflow-hidden">
       {/* Aura Effects */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute top-1/4 left-0 w-96 h-96 glow-circle glow-blue opacity-30" />
-        <div className="absolute bottom-1/4 right-0 w-80 h-80 glow-circle glow-purple opacity-20" />
+        <div className="absolute top-1/4 left-0 w-96 h-96 glow-circle glow-blue" />
+        <div className="absolute bottom-1/4 right-0 w-80 h-80 glow-circle glow-purple" />
       </div>
 
       <div className="mx-auto max-w-5xl px-6">

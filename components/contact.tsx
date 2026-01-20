@@ -31,9 +31,9 @@ export function Contact() {
     <section id="contact" className="relative min-h-screen bg-background py-20 overflow-hidden">
       {/* Aura Effects */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute top-1/4 right-0 w-96 h-96 glow-circle glow-blue opacity-40" />
-        <div className="absolute bottom-1/4 left-1/3 w-80 h-80 glow-circle glow-purple opacity-25" />
-        <div className="absolute top-1/2 right-1/4 w-72 h-72 glow-circle glow-green opacity-20" />
+        <div className="absolute top-1/4 right-0 w-96 h-96 glow-circle glow-blue" />
+        <div className="absolute bottom-1/4 left-1/3 w-80 h-80 glow-circle glow-purple" />
+        <div className="absolute top-1/2 right-1/4 w-72 h-72 glow-circle glow-green" />
       </div>
 
       <div className="mx-auto max-w-5xl px-6">

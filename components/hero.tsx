@@ -17,14 +17,14 @@ export function Hero() {
       <div className="absolute inset-0 gradient-bg -z-10" />
 
       {/* Aura Effects */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 pointer-events-none">
         <div className="absolute top-0 right-0 w-96 h-96 glow-circle glow-blue" />
         <div className="absolute bottom-0 left-0 w-80 h-80 glow-circle glow-purple" />
-        <div className="absolute top-1/2 right-1/4 w-72 h-72 glow-circle glow-green opacity-50" />
+        <div className="absolute top-1/2 right-1/4 w-72 h-72 glow-circle glow-green" />
       </div>
 
       {/* Radial overlay for depth */}
-      <div className="absolute inset-0 radial-gradient-dark -z-10 opacity-80" />
+      <div className="absolute inset-0 radial-gradient-dark -z-10 opacity-50" />
 
       <div className="mx-auto max-w-4xl px-6 py-20 md:py-32">
         <div className="space-y-8">
