@@ -13,15 +13,15 @@ export function Hero() {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen pt-20 overflow-hidden">
-      <div className="mx-auto max-w-4xl px-6 py-20 md:py-32">
+    <section id="hero" className="relative min-h-screen pt-16 overflow-hidden">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-20 md:py-32">
         <div className="space-y-8">
           {/* Main Heading */}
           <div className="space-y-4">
-            <h1 className="text-6xl md:text-7xl font-bold tracking-tight text-balance text-foreground">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-balance text-foreground">
               {heroData.name}
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground text-balance">
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground text-balance">
               {heroData.title}
             </p>
 
@@ -42,7 +42,7 @@ export function Hero() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex gap-4 flex-wrap pt-4">
+          <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
             {heroData.cta.map((button) => (
               <Button
                 key={button.label}
@@ -58,7 +58,7 @@ export function Hero() {
           <Separator className="my-8" />
 
           {/* Quick Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 pt-4">
             {heroData.stats.map((stat) => (
               <div key={stat.label}>
                 <p className={`text-2xl font-bold ${stat.colorClass}`}>

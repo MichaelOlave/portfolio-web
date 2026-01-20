@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   title: "Michael Olave | Portfolio",
   description:
     "Portfolio website of Michael Olave, a software developer specializing in saas applications.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 interface RootLayoutProps {

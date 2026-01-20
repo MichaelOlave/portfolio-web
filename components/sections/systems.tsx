@@ -32,22 +32,22 @@ export function Systems() {
   return (
     <section
       id="systems"
-      className="relative min-h-screen py-20 overflow-hidden"
+      className="relative min-h-screen py-12 sm:py-20 overflow-hidden"
     >
-      <div className="mx-auto max-w-5xl px-6">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="space-y-8">
           <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-foreground">
               {systemsData.title}
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl">
+            <p className="text-base sm:text-xl text-muted-foreground max-w-2xl">
               {systemsData.description}
             </p>
           </div>
 
           <Separator />
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {systemsData.components.map((component, idx) => (
               <Card
                 key={idx}
@@ -82,7 +82,7 @@ export function Systems() {
           <Separator className="mt-8" />
 
           {/* Infrastructure Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-12">
             {systemsData.stats.map((stat) => (
               <div key={stat.label} className="text-center space-y-2">
                 <p className="text-3xl font-bold text-green-500">{stat.value}</p>

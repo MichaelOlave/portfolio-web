@@ -13,14 +13,14 @@ import aboutData from "@/data/about.json";
 
 export function About() {
   return (
-    <section id="about" className="relative min-h-screen py-20 overflow-hidden">
-      <div className="mx-auto max-w-5xl px-6">
+    <section id="about" className="relative min-h-screen py-12 sm:py-20 overflow-hidden">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="space-y-12">
           <div className="space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-foreground">
               {aboutData.title}
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-base sm:text-xl text-muted-foreground">
               {aboutData.subtitle}
             </p>
           </div>
@@ -28,9 +28,9 @@ export function About() {
           <Separator />
 
           {/* Story */}
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-12">
             <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-foreground">
+              <h3 className="text-xl sm:text-2xl font-semibold text-foreground">
                 {aboutData.journey.heading}
               </h3>
               {aboutData.journey.paragraphs.map((para, idx) => (
@@ -41,7 +41,7 @@ export function About() {
             </div>
 
             <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-foreground">
+              <h3 className="text-xl sm:text-2xl font-semibold text-foreground">
                 {aboutData.focus.heading}
               </h3>
               <ul className="space-y-3">
@@ -61,11 +61,11 @@ export function About() {
 
           {/* Skills */}
           <div className="space-y-8">
-            <h3 className="text-2xl font-semibold text-foreground">
+            <h3 className="text-xl sm:text-2xl font-semibold text-foreground">
               Skills & Technologies
             </h3>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-8">
               {aboutData.skills.map((category) => (
                 <div key={category.category} className="space-y-3">
                   <h4 className={`font-semibold ${category.accentColor}`}>
