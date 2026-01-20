@@ -29,7 +29,13 @@ const skillCategories = [
 
 export function About() {
   return (
-    <section id="about" className="min-h-screen bg-background py-20">
+    <section id="about" className="relative min-h-screen bg-background py-20 overflow-hidden">
+      {/* Aura Effects */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="absolute top-1/2 left-1/4 w-96 h-96 glow-circle glow-purple opacity-30" />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 glow-circle glow-blue opacity-20" />
+      </div>
+
       <div className="mx-auto max-w-5xl px-6">
         <div className="space-y-12">
           <div className="space-y-4">

@@ -151,4 +151,108 @@
       #000000 100%
     );
   }
+
+  /* Gradient & Aura Effects */
+  .gradient-bg {
+    background: linear-gradient(
+      135deg,
+      #0f172a 0%,
+      #1a1a2e 50%,
+      #0f172a 100%
+    );
+  }
+
+  .aura-gradient {
+    background: radial-gradient(
+      ellipse at center,
+      rgba(59, 130, 246, 0.15) 0%,
+      rgba(168, 85, 247, 0.08) 40%,
+      rgba(15, 23, 42, 0.4) 100%
+    );
+  }
+
+  .aura-blue {
+    background: radial-gradient(
+      ellipse 800px 300px at 50% 20%,
+      rgba(59, 130, 246, 0.25) 0%,
+      rgba(59, 130, 246, 0.1) 30%,
+      transparent 70%
+    );
+  }
+
+  .aura-purple {
+    background: radial-gradient(
+      ellipse 600px 250px at 80% 50%,
+      rgba(168, 85, 247, 0.2) 0%,
+      rgba(168, 85, 247, 0.05) 40%,
+      transparent 70%
+    );
+  }
+
+  .aura-green {
+    background: radial-gradient(
+      ellipse 700px 280px at 20% 80%,
+      rgba(74, 222, 128, 0.15) 0%,
+      rgba(74, 222, 128, 0.05) 35%,
+      transparent 65%
+    );
+  }
+
+  .glow-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.4;
+  }
+
+  .glow-blue {
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.5) 0%, transparent 70%);
+    animation: float 8s ease-in-out infinite;
+  }
+
+  .glow-purple {
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.4) 0%, transparent 70%);
+    animation: float 10s ease-in-out infinite reverse;
+  }
+
+  .glow-green {
+    background: radial-gradient(circle, rgba(74, 222, 128, 0.3) 0%, transparent 70%);
+    animation: float 12s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) translateX(0px);
+    }
+    50% {
+      transform: translateY(-30px) translateX(20px);
+    }
+  }
+
+  .animate-glow {
+    animation: glow-pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% {
+      opacity: 0.4;
+      filter: blur(60px);
+    }
+    50% {
+      opacity: 0.6;
+      filter: blur(50px);
+    }
+  }
+
+  .gradient-text {
+    background: linear-gradient(
+      135deg,
+      #3b82f6 0%,
+      #a855f7 50%,
+      #4ade80 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }
