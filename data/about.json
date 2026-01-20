@@ -4,7 +4,7 @@
   "journey": {
     "heading": "The Journey",
     "paragraphs": [
-      "Started with a curiosity about how things work. Quickly realized I loved building solutions to complex problems. From web applications to game engine architecture to infrastructure—I'm driven by the challenge of making systems work efficiently.",
+      "Started with a curiosity about how things work. Quickly realized I loved building solutions to complex problems. From web applications to infrastructure—I'm driven by the challenge of making systems work efficiently.",
       "Currently pursuing a degree in Software Engineering at Champlain College, where I've deepened my knowledge of systems design, networking, and architectural patterns."
     ]
   },
@@ -20,11 +20,6 @@
         "icon": "→",
         "color": "text-green-500",
         "text": "Infrastructure as Code and DevOps practices"
-      },
-      {
-        "icon": "→",
-        "color": "text-purple-400",
-        "text": "Game engine development and networked systems"
       },
       {
         "icon": "→",
@@ -46,13 +41,15 @@
     },
     {
       "category": "Backend & Infrastructure",
-      "skills": ["Node.js", "PostgreSQL", "Redis", "Docker", "Proxmox"],
+      "skills": [
+        "Node.js",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "Proxmox",
+        "FastAPI"
+      ],
       "accentColor": "text-green-400"
-    },
-    {
-      "category": "Game Development",
-      "skills": ["Unreal Engine 5", "C++", "Blueprints", "Networking", "Physics"],
-      "accentColor": "text-purple-400"
     }
   ],
   "philosophy": {

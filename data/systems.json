@@ -34,9 +34,9 @@
     },
     {
       "title": "Security",
-      "description": "Firewall rules, VPN access, and secure networking practices",
+      "description": "Firewall rules, VPN access, Tunnels, and secure networking practices",
       "iconName": "Shield",
-      "technologies": ["iptables", "UFW", "VPN", "SSH Keys"]
+      "technologies": ["iptables", "UFW", "VPN", "SSH Keys", "Tunnels"]
     }
   ],
   "stats": [
