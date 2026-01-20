@@ -20,7 +20,7 @@ export function About() {
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
               {aboutData.title}
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-xl text-muted-foreground">
               {aboutData.subtitle}
             </p>
           </div>
@@ -34,7 +34,7 @@ export function About() {
                 {aboutData.journey.heading}
               </h3>
               {aboutData.journey.paragraphs.map((para, idx) => (
-                <p key={idx} className="text-muted-foreground leading-relaxed">
+                <p key={idx} className="text-lg text-muted-foreground leading-relaxed">
                   {para}
                 </p>
               ))}
@@ -46,7 +46,7 @@ export function About() {
               </h3>
               <ul className="space-y-3">
                 {aboutData.focus.items.map((item, idx) => (
-                  <li key={idx} className="flex gap-3 text-muted-foreground">
+                  <li key={idx} className="flex gap-3 text-lg text-muted-foreground">
                     <span className={`${item.color} font-bold`}>
                       {item.icon}
                     </span>
@@ -98,7 +98,7 @@ export function About() {
                 {aboutData.philosophy.principles.map((principle, idx) => (
                   <li
                     key={idx}
-                    className="flex gap-3 text-muted-foreground"
+                    className="flex gap-3 text-lg text-muted-foreground"
                   >
                     <span className={principle.color}>{principle.icon}</span>
                     <span>

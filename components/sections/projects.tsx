@@ -16,7 +16,7 @@ export function Projects() {
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
               {projectsData.title}
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl">
+            <p className="text-xl text-muted-foreground max-w-2xl">
               {projectsData.description}
             </p>
           </div>

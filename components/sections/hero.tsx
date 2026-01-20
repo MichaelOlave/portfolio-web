@@ -37,7 +37,7 @@ export function Hero() {
           </div>
 
           {/* Description */}
-          <p className="text-lg text-foreground/80 max-w-2xl text-balance leading-relaxed">
+          <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl text-balance leading-relaxed">
             {heroData.description}
           </p>
 

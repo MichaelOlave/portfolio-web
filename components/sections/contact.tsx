@@ -24,7 +24,7 @@ export function Contact() {
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
               {contactData.title}
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               {contactData.description}
             </p>
           </div>
@@ -54,7 +54,7 @@ export function Contact() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       {link.value}
                     </p>
                   </CardContent>
@@ -71,7 +71,7 @@ export function Contact() {
               <a href={contactData.cta.href}>{contactData.cta.label}</a>
             </Button>
 
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base text-muted-foreground">
               {contactData.cta.responseTime}
             </p>
           </div>
@@ -80,13 +80,13 @@ export function Contact() {
 
           {/* Footer */}
           <div className="space-y-4 text-center py-8">
-            <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+            <div className="flex items-center justify-center gap-2 text-base text-muted-foreground">
               <span>Made with</span>
               <span className="text-red-500">♥</span>
               <span>{contactData.footer.madeWith.replace("Made with ♥ using ", "")}</span>
             </div>
 
-            <div className="flex items-center justify-center gap-4 text-sm text-muted-foreground">
+            <div className="flex items-center justify-center gap-4 text-base text-muted-foreground">
               {contactData.footer.links.map((link, idx) => (
                 <div key={idx}>
                   <a href={link.href} className="hover:text-primary transition-colors">

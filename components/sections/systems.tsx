@@ -40,7 +40,7 @@ export function Systems() {
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
               {systemsData.title}
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl">
+            <p className="text-xl text-muted-foreground max-w-2xl">
               {systemsData.description}
             </p>
           </div>
@@ -86,7 +86,7 @@ export function Systems() {
             {systemsData.stats.map((stat) => (
               <div key={stat.label} className="text-center space-y-2">
                 <p className="text-3xl font-bold text-green-500">{stat.value}</p>
-                <p className="text-sm text-muted-foreground">{stat.label}</p>
+                <p className="text-base text-muted-foreground">{stat.label}</p>
               </div>
             ))}
           </div>
