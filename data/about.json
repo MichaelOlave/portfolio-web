@@ -1,0 +1,88 @@
+{
+  "title": "About Me",
+  "subtitle": "Software Engineering student with a passion for building systems that scale.",
+  "journey": {
+    "heading": "The Journey",
+    "paragraphs": [
+      "Started with a curiosity about how things work. Quickly realized I loved building solutions to complex problems. From web applications to game engine architecture to infrastructure—I'm driven by the challenge of making systems work efficiently.",
+      "Currently pursuing a degree in Software Engineering at Champlain College, where I've deepened my knowledge of systems design, networking, and architectural patterns."
+    ]
+  },
+  "focus": {
+    "heading": "What I'm Focused On",
+    "items": [
+      {
+        "icon": "→",
+        "color": "text-primary",
+        "text": "Building performant full-stack applications"
+      },
+      {
+        "icon": "→",
+        "color": "text-green-500",
+        "text": "Infrastructure as Code and DevOps practices"
+      },
+      {
+        "icon": "→",
+        "color": "text-purple-400",
+        "text": "Game engine development and networked systems"
+      },
+      {
+        "icon": "→",
+        "color": "text-blue-400",
+        "text": "Writing clean, maintainable, and scalable code"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "category": "Languages",
+      "skills": ["TypeScript", "JavaScript", "C++", "Python", "SQL"],
+      "accentColor": "text-blue-400"
+    },
+    {
+      "category": "Frontend",
+      "skills": ["React", "Next.js", "Tailwind CSS", "Shadcn/ui", "Three.js"],
+      "accentColor": "text-blue-400"
+    },
+    {
+      "category": "Backend & Infrastructure",
+      "skills": ["Node.js", "PostgreSQL", "Redis", "Docker", "Proxmox"],
+      "accentColor": "text-green-400"
+    },
+    {
+      "category": "Game Development",
+      "skills": ["Unreal Engine 5", "C++", "Blueprints", "Networking", "Physics"],
+      "accentColor": "text-purple-400"
+    }
+  ],
+  "philosophy": {
+    "title": "My Philosophy",
+    "description": "Great software is invisible—it just works. I believe in building systems that are:",
+    "principles": [
+      {
+        "icon": "✓",
+        "color": "text-primary",
+        "title": "Performant",
+        "description": "Every millisecond counts"
+      },
+      {
+        "icon": "✓",
+        "color": "text-green-500",
+        "title": "Scalable",
+        "description": "Ready for growth"
+      },
+      {
+        "icon": "✓",
+        "color": "text-purple-400",
+        "title": "Maintainable",
+        "description": "Future-you will thank you"
+      },
+      {
+        "icon": "✓",
+        "color": "text-blue-400",
+        "title": "User-focused",
+        "description": "The best tech serves people"
+      }
+    ]
+  }
+}

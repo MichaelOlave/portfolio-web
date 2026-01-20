@@ -1,0 +1,44 @@
+{
+  "name": "Michael Olave",
+  "title": "Software Engineer • Champlain College",
+  "status": {
+    "icon": "green-500",
+    "text": "Currently Building",
+    "pulseClass": "pulse-slow"
+  },
+  "description": "Passionate about building performant systems and exploring the intersection of infrastructure, game development, and user experience. Specialist in full-stack development, DevOps, and systems architecture.",
+  "cta": [
+    {
+      "label": "View My Work",
+      "variant": "default",
+      "scrollId": "projects"
+    },
+    {
+      "label": "Get in Touch",
+      "variant": "outline",
+      "scrollId": "contact"
+    }
+  ],
+  "stats": [
+    {
+      "value": "5+",
+      "label": "Projects",
+      "colorClass": "text-primary"
+    },
+    {
+      "value": "3+",
+      "label": "Years Learning",
+      "colorClass": "text-accent"
+    },
+    {
+      "value": "10+",
+      "label": "Technologies",
+      "colorClass": "text-blue-400"
+    },
+    {
+      "value": "∞",
+      "label": "Curiosity",
+      "colorClass": "text-green-500"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Systems & Infrastructure",
+  "description": "Beyond application development—here's how I architect and maintain self-hosted infrastructure that powers high-availability systems.",
+  "components": [
+    {
+      "title": "Virtualization",
+      "description": "Proxmox VE for bare-metal hypervisor management with high availability",
+      "iconName": "Server",
+      "technologies": ["Proxmox VE", "KVM", "LXC"]
+    },
+    {
+      "title": "Containerization",
+      "description": "Docker and Docker Compose for microservices and application deployment",
+      "iconName": "GitBranch",
+      "technologies": ["Docker", "Docker Compose", "Container Registry"]
+    },
+    {
+      "title": "Reverse Proxy & Routing",
+      "description": "Traefik for intelligent routing, SSL termination, and load balancing",
+      "iconName": "Network",
+      "technologies": ["Traefik", "Let's Encrypt", "SSL/TLS"]
+    },
+    {
+      "title": "Databases",
+      "description": "PostgreSQL for relational data and Redis for caching and sessions",
+      "iconName": "Database",
+      "technologies": ["PostgreSQL", "Redis", "Backups"]
+    },
+    {
+      "title": "Monitoring & Observability",
+      "description": "Prometheus for metrics, Grafana for visualization, and alerting setup",
+      "iconName": "BarChart3",
+      "technologies": ["Prometheus", "Grafana", "AlertManager"]
+    },
+    {
+      "title": "Security",
+      "description": "Firewall rules, VPN access, and secure networking practices",
+      "iconName": "Shield",
+      "technologies": ["iptables", "UFW", "VPN", "SSH Keys"]
+    }
+  ],
+  "stats": [
+    {
+      "value": "3",
+      "label": "VMs Running"
+    },
+    {
+      "value": "12+",
+      "label": "Containers"
+    },
+    {
+      "value": "99.9%",
+      "label": "Uptime"
+    },
+    {
+      "value": "∞",
+      "label": "Learning"
+    }
+  ]
+}

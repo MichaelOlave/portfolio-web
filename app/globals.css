@@ -255,4 +255,26 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+  /* Animated Background Blobs */
+  @keyframes blob {
+    0%, 100% {
+      transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+    25% {
+      transform: translate(100px, -120px) scale(1.1) rotate(90deg);
+    }
+    50% {
+      transform: translate(-80px, 100px) scale(0.9) rotate(180deg);
+    }
+    75% {
+      transform: translate(80px, -60px) scale(1.05) rotate(270deg);
+    }
+  }
+
+  .animate-blob {
+    animation: blob 30s cubic-bezier(0.4, 0.2, 0.6, 0.8) infinite;
+    will-change: transform;
+    filter: saturate(1.2);
+  }
 }

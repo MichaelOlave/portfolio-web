@@ -1,0 +1,43 @@
+{
+  "title": "Let's Work Together",
+  "description": "Whether you want to discuss a project, explore opportunities, or just chat about technology—I'm always open to conversations.",
+  "links": [
+    {
+      "iconName": "Mail",
+      "label": "Email",
+      "value": "michael@olavenode.com",
+      "href": "mailto:michael@olavenode.com"
+    },
+    {
+      "iconName": "Github",
+      "label": "GitHub",
+      "value": "@michaelolave",
+      "href": "https://github.com/MichaelOlave"
+    },
+    {
+      "iconName": "Linkedin",
+      "label": "LinkedIn",
+      "value": "Michael Olave",
+      "href": "https://www.linkedin.com/in/michael-olave"
+    }
+  ],
+  "cta": {
+    "label": "Send Me an Email",
+    "href": "mailto:michael@olavenode.com",
+    "responseTime": "I typically respond within 24 hours"
+  },
+  "footer": {
+    "madeWith": "Made with ♥ using Next.js, React, and Tailwind CSS",
+    "links": [
+      {
+        "label": "GitHub Repo",
+        "href": "https://github.com/MichaelOlave/portfolio-web"
+      },
+      {
+        "label": "Sitemap",
+        "href": "#"
+      }
+    ],
+    "copyright": "© 2024 Michael Olave. All rights reserved."
+  }
+}
