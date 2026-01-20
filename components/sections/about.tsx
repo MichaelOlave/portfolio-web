@@ -13,7 +13,10 @@ import aboutData from "@/data/about.json";
 
 export function About() {
   return (
-    <section id="about" className="relative min-h-screen py-12 sm:py-20 overflow-hidden">
+    <section
+      id="about"
+      className="relative min-h-screen py-12 sm:py-20 overflow-hidden"
+    >
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="space-y-12">
           <div className="space-y-4">
@@ -34,7 +37,10 @@ export function About() {
                 {aboutData.journey.heading}
               </h3>
               {aboutData.journey.paragraphs.map((para, idx) => (
-                <p key={idx} className="text-lg text-muted-foreground leading-relaxed">
+                <p
+                  key={idx}
+                  className="text-lg text-muted-foreground leading-relaxed"
+                >
                   {para}
                 </p>
               ))}
@@ -46,7 +52,10 @@ export function About() {
               </h3>
               <ul className="space-y-3">
                 {aboutData.focus.items.map((item, idx) => (
-                  <li key={idx} className="flex gap-3 text-lg text-muted-foreground">
+                  <li
+                    key={idx}
+                    className="flex gap-3 text-lg text-muted-foreground"
+                  >
                     <span className={`${item.color} font-bold`}>
                       {item.icon}
                     </span>
@@ -67,7 +76,10 @@ export function About() {
 
             <div className="grid md:grid-cols-2 gap-4 sm:gap-8">
               {aboutData.skills.map((category) => (
-                <div key={category.category} className="space-y-3">
+                <div
+                  key={category.category}
+                  className="text-center bg-background opacity-50 border border-border rounded-lg p-4 space-y-3"
+                >
                   <h4 className={`font-semibold ${category.accentColor}`}>
                     {category.category}
                   </h4>
@@ -102,7 +114,8 @@ export function About() {
                   >
                     <span className={principle.color}>{principle.icon}</span>
                     <span>
-                      <strong>{principle.title}:</strong> {principle.description}
+                      <strong>{principle.title}:</strong>{" "}
+                      {principle.description}
                     </span>
                   </li>
                 ))}

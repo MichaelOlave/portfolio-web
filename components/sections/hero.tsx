@@ -28,7 +28,9 @@ export function Hero() {
             {/* Status Indicator */}
             <div className="flex items-center gap-3 text-sm">
               <div className="flex items-center gap-2">
-                <div className={`h-2 w-2 rounded-full bg-${heroData.status.icon} ${heroData.status.pulseClass}`} />
+                <div
+                  className={`h-2 w-2 rounded-full bg-${heroData.status.icon} ${heroData.status.pulseClass}`}
+                />
                 <span className="text-muted-foreground">
                   {heroData.status.text}
                 </span>
@@ -60,7 +62,10 @@ export function Hero() {
           {/* Quick Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 pt-4">
             {heroData.stats.map((stat) => (
-              <div key={stat.label}>
+              <div
+                key={stat.label}
+                className="text-center bg-background opacity-50 border border-border rounded-lg p-4 space-y-1"
+              >
                 <p className={`text-2xl font-bold ${stat.colorClass}`}>
                   {stat.value}
                 </p>
