@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Dialog,
   DialogContent,
@@ -47,19 +48,20 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
   return (
     <>
-      <div className="group relative overflow-hidden rounded-lg border border-border bg-card hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10">
-        <div className="p-6 space-y-4">
+      <Card className="group relative overflow-hidden hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10 cursor-pointer">
+        <CardHeader>
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1 space-y-2">
-              <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
+              <CardTitle className="group-hover:text-primary transition-colors">
                 {project.title}
-              </h3>
-              <p className="text-sm text-muted-foreground line-clamp-2">
+              </CardTitle>
+              <CardDescription className="line-clamp-2">
                 {project.description}
-              </p>
+              </CardDescription>
             </div>
           </div>
-
+        </CardHeader>
+        <CardContent className="space-y-4">
           <div className="flex flex-wrap gap-2">
             <Badge
               variant="outline"
@@ -83,8 +85,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
             <span>Case Study</span>
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
-        </div>
-      </div>
+        </CardContent>
+      </Card>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">

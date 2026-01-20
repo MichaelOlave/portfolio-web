@@ -1,6 +1,7 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Server, Database, Network, GitBranch, Shield, BarChart3 } from "lucide-react";
 
@@ -69,35 +70,31 @@ export function Systems() {
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {systemComponents.map((component, idx) => (
-              <div
+              <Card
                 key={idx}
-                className="relative overflow-hidden rounded-lg border border-border bg-card/50 hover:bg-card/80 transition-colors p-6 space-y-4 hover:border-green-500/50"
+                className="hover:border-green-500/50 transition-all hover:shadow-lg hover:shadow-green-500/10"
               >
-                <div className="flex items-start justify-between">
-                  <div className="text-green-500">{component.icon}</div>
-                </div>
-
-                <div className="space-y-2">
-                  <h3 className="font-semibold text-lg text-foreground">
-                    {component.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {component.description}
-                  </p>
-                </div>
-
-                <div className="flex flex-wrap gap-2 pt-2">
-                  {component.technologies.map((tech) => (
-                    <Badge
-                      key={tech}
-                      variant="secondary"
-                      className="bg-green-500/20 text-green-400 border-green-500/30 text-xs"
-                    >
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
-              </div>
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <div className="text-green-500">{component.icon}</div>
+                  </div>
+                  <CardTitle>{component.title}</CardTitle>
+                  <CardDescription>{component.description}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {component.technologies.map((tech) => (
+                      <Badge
+                        key={tech}
+                        variant="secondary"
+                        className="bg-green-500/20 text-green-400 border-green-500/30 text-xs"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
 

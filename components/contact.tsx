@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react";
 
@@ -52,21 +53,24 @@ export function Contact() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative overflow-hidden rounded-lg border border-border bg-card hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all p-6 space-y-4"
+                  className="group"
                 >
-                  <div className="flex items-start justify-between">
-                    <div className="text-primary">
-                      <Icon className="w-6 h-6" />
-                    </div>
-                    <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </div>
-
-                  <div className="space-y-1">
-                    <p className="font-semibold text-foreground group-hover:text-primary transition-colors">
-                      {link.label}
-                    </p>
-                    <p className="text-sm text-muted-foreground">{link.value}</p>
-                  </div>
+                  <Card className="h-full hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10">
+                    <CardHeader>
+                      <div className="flex items-start justify-between">
+                        <div className="text-primary">
+                          <Icon className="w-6 h-6" />
+                        </div>
+                        <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </div>
+                      <CardTitle className="group-hover:text-primary transition-colors">
+                        {link.label}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-muted-foreground">{link.value}</p>
+                    </CardContent>
+                  </Card>
                 </a>
               );
             })}

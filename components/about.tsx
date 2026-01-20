@@ -1,6 +1,7 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
 const skillCategories = [
@@ -113,30 +114,34 @@ export function About() {
           <Separator />
 
           {/* Philosophy */}
-          <div className="space-y-4 p-6 rounded-lg border border-border bg-card/50">
-            <h3 className="text-2xl font-semibold text-foreground">My Philosophy</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Great software is invisible&mdash;it just works. I believe in building systems that are:
-            </p>
-            <ul className="space-y-2">
-              <li className="flex gap-3 text-muted-foreground">
-                <span className="text-primary">✓</span>
-                <span><strong>Performant:</strong> Every millisecond counts</span>
-              </li>
-              <li className="flex gap-3 text-muted-foreground">
-                <span className="text-green-500">✓</span>
-                <span><strong>Scalable:</strong> Ready for growth</span>
-              </li>
-              <li className="flex gap-3 text-muted-foreground">
-                <span className="text-purple-400">✓</span>
-                <span><strong>Maintainable:</strong> Future-you will thank you</span>
-              </li>
-              <li className="flex gap-3 text-muted-foreground">
-                <span className="text-blue-400">✓</span>
-                <span><strong>User-focused:</strong> The best tech serves people</span>
-              </li>
-            </ul>
-          </div>
+          <Card>
+            <CardHeader>
+              <CardTitle>My Philosophy</CardTitle>
+              <CardDescription>
+                Great software is invisible&mdash;it just works. I believe in building systems that are:
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2">
+                <li className="flex gap-3 text-muted-foreground">
+                  <span className="text-primary">✓</span>
+                  <span><strong>Performant:</strong> Every millisecond counts</span>
+                </li>
+                <li className="flex gap-3 text-muted-foreground">
+                  <span className="text-green-500">✓</span>
+                  <span><strong>Scalable:</strong> Ready for growth</span>
+                </li>
+                <li className="flex gap-3 text-muted-foreground">
+                  <span className="text-purple-400">✓</span>
+                  <span><strong>Maintainable:</strong> Future-you will thank you</span>
+                </li>
+                <li className="flex gap-3 text-muted-foreground">
+                  <span className="text-blue-400">✓</span>
+                  <span><strong>User-focused:</strong> The best tech serves people</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
