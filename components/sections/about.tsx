@@ -32,7 +32,7 @@ export function About() {
 
           {/* Story */}
           <div className="grid md:grid-cols-2 gap-6 sm:gap-12">
-            <div className="space-y-4">
+            <div className="space-y-4 bg-background opacity-50 border border-border rounded-lg p-4">
               <h3 className="text-xl sm:text-2xl font-semibold text-foreground">
                 {aboutData.journey.heading}
               </h3>

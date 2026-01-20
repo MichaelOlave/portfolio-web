@@ -39,7 +39,7 @@ export function Hero() {
           </div>
 
           {/* Description */}
-          <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl text-balance leading-relaxed">
+          <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl text-balance leading-relaxed bg-background opacity-50 border border-border rounded-lg p-4">
             {heroData.description}
           </p>
 
