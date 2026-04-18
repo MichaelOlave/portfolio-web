@@ -41,6 +41,56 @@
       "link": "https://github.com"
     },
     {
+      "id": "clubcrm",
+      "title": "ClubCRM",
+      "description": "Full-stack club management platform with role-aware admin workflows and a modular monolith backend",
+      "category": "tech",
+      "tags": ["Next.js", "FastAPI", "Multi-DB"],
+      "problem": "Student organizations and club operators need one system to manage membership, join requests, events, announcements, and access control without scattering workflows across forms, spreadsheets, and disconnected admin tools.",
+      "solution": "Built ClubCRM as a full-stack platform with a Next.js frontend, FastAPI backend, and a modular-monolith architecture that separates feature modules cleanly while supporting real CRUD workflows, backend-owned auth, and multi-database responsibilities.",
+      "challenges": [
+        "Keeping the frontend and backend aligned while the UI surface evolved faster than the API contract",
+        "Designing clean module boundaries across auth, clubs, members, memberships, forms, events, and announcements",
+        "Using PostgreSQL, MongoDB, Redis, and Kafka intentionally so each datastore had a clear responsibility instead of becoming incidental complexity"
+      ],
+      "techStack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "FastAPI",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Kafka",
+        "Docker Compose"
+      ],
+      "link": "https://clubcrm.org"
+    },
+    {
+      "id": "clubcrm-monitoring",
+      "title": "ClubCRM Monitoring Stack",
+      "description": "Companion monitoring and control plane for a live networking and failover demo",
+      "category": "systems",
+      "tags": ["Next.js", "FastAPI", "Kubernetes"],
+      "problem": "The networking demo needed to stay observable even while VMs, pods, and storage-backed workloads were intentionally disrupted, which meant the team needed a separate control plane that could survive the same failures being demonstrated.",
+      "solution": "Built a standalone monitoring stack with a FastAPI control plane and Next.js dashboard that streams live environment snapshots, embeds the public failover view, exposes guarded VM and pod controls, and supports both live Kubernetes polling and snapshot-driven rehearsals.",
+      "challenges": [
+        "Keeping the monitoring surface separate from the main product so demo instability did not take the dashboard down with it",
+        "Providing narrow, auditable control paths for VM power actions and container operations without exposing arbitrary shell access",
+        "Combining synthetic HTTP health checks, guest-agent telemetry, Kubernetes state, and storage visibility into one real-time operational view"
+      ],
+      "techStack": [
+        "Next.js",
+        "React",
+        "FastAPI",
+        "WebSockets",
+        "Docker Compose",
+        "Kubernetes",
+        "Longhorn",
+        "OrbStack"
+      ]
+    },
+    {
       "id": "home-lab",
       "title": "Home Lab Infrastructure",
       "description": "Self-hosted infrastructure with Proxmox, Docker, and networking",

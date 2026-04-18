@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Michael Olave Portfolio Web
+
+A single-page portfolio site built with Next.js 16, React 19, TypeScript, and Tailwind CSS v4. The app uses the App Router, a small set of client-side interactive components, and repo-managed JSON content under `data/`.
+
+## Stack
+
+- Next.js 16 with the App Router
+- React 19 and TypeScript
+- Tailwind CSS v4 with CSS variable theme tokens
+- `next-themes` for dark mode
+- Radix UI primitives, lucide-react icons, Sonner toasts, and shadcn-style UI building blocks
+- Vercel Analytics
 
 ## Getting Started
 
-First, run the development server:
+Use `pnpm` as the primary package manager for this repo.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm dev    # Start the local dev server
+pnpm build  # Build the production bundle
+pnpm start  # Run the production server
+pnpm lint   # Run ESLint
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+app/         App Router entrypoints, layout, and global styles
+components/  Navigation, sections, shared UI primitives, and interactive cards
+data/        JSON content rendered by the homepage sections
+docs/        Architecture, content, styling, and maintenance docs
+hooks/       Small reusable React hooks
+lib/         Shared utilities
+public/      Static assets
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Content Editing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Most portfolio copy and structured content lives in `data/*.json`.
 
-## Deploy on Vercel
+- Update `data/hero.json` for the hero section and top-level stats.
+- Update `data/projects.json` for project cards and dialog content.
+- Update `data/systems.json` for systems cards and metrics.
+- Update `data/about.json` and `data/contact.json` for the remaining sections.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If you change data field names, icon names, or utility-class strings stored in JSON, update the matching component code as well.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Documentation
+
+- [Docs index](./docs/README.md)
+- [Architecture](./docs/architecture.md)
+- [Components](./docs/components.md)
+- [Content model](./docs/content-model.md)
+- [Styling and theme](./docs/styling-and-theme.md)
+- [Development workflow](./docs/development-workflow.md)
+- [Decisions](./docs/decisions.md)
+
+## Notes
+
+- No environment variables are currently required for local development.
+- The site is a single-page experience rooted in `app/page.tsx`.
+- There is no backend, CMS, or test suite in the current repo.
