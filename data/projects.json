@@ -5,22 +5,36 @@
     {
       "id": "taco",
       "title": "TACO",
-      "description": "Commission management System for Insurance Agencies and Brokers",
+      "description": "Multi-module SaaS platform for commission management across insurance agencies and brokers, built as a modular monolith with a FastAPI backend and Next.js frontend",
       "category": "tech",
-      "tags": ["Next.js", "TypeScript", "Real-time"],
-      "problem": "Insurance agencies and brokers face challenges in managing commissions efficiently, leading to delays and inaccuracies in payments. As well as spending excessive time on manual tracking and reporting.",
-      "solution": "Developed TACO, a web application that automates commission tracking, calculation, and reporting. It provides real-time updates and insights into commission statuses, improving transparency and efficiency.",
+      "tags": ["FastAPI", "Next.js", "Modular Monolith"],
+      "problem": "Insurance agencies and brokers spend excessive time on manual commission tracking and reporting. Existing tools lack the audit trails, role-aware access, and automated reconciliation needed to manage complex carrier statement ingestion and agent payout workflows at scale.",
+      "solution": "Built TACO as a monorepo with three independently deployable services — a FastAPI backend, an ARQ worker runtime, and a Next.js frontend — each with its own Docker image shipped through GitHub Actions CI/CD and routed in production by Traefik. The backend is a modular monolith organized around ten isolated business modules (auth, tenants, billing, carriers, ingestion, agents, commissions, policies, CRM, notifications), each owning its domain, application, and port layers through hexagonal architecture and CQRS. A manifest-driven platform registry assembles API routes, worker commands, and scheduler jobs at runtime without centralizing that knowledge. Signed command envelopes over a Redis-backed ARQ queue power async statement processing and billing workflows, while Auth0, Stripe, SendGrid, AWS S3/KMS, and Vault handle identity, subscriptions, notifications, file storage, and secrets.",
       "challenges": [
-        "Designing a scalable architecture to handle complex commission structures",
-        "Implementing real-time data synchronization across multiple users",
-        "Ensuring data security and compliance with industry regulations"
+        "Designing a manifest-driven composition model so each module registers its own API routes, worker commands, and scheduler jobs without centralizing that knowledge in a monolithic router or task file",
+        "Enforcing hexagonal architecture boundaries across ten business modules — keeping domain code free of infrastructure imports and preventing cross-module reach-through during an active migration from legacy HTTP patterns",
+        "Building a signed-command worker runtime with versioned payloads, TTL validation, signature verification, deduplication, and dead-letter handling so async ingestion and billing jobs are safe to retry and traceable on failure",
+        "Coordinating three independent production runtimes (API, worker, scheduler) so worker contracts, signed-command TTLs, and outbox relay state stay consistent across deployments without requiring simultaneous cutover"
       ],
       "techStack": [
+        "FastAPI",
+        "Python",
+        "SQLAlchemy",
         "Next.js",
         "TypeScript",
         "PostgreSQL",
-        "WebSockets",
-        "Redis"
+        "Redis",
+        "Auth0",
+        "Stripe",
+        "SendGrid",
+        "AWS S3",
+        "AWS KMS",
+        "Kafka",
+        "ARQ",
+        "Traefik",
+        "Terraform",
+        "Docker Compose",
+        "GitHub Actions"
       ],
       "link": "https://github.com"
     },
